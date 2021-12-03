@@ -1,0 +1,60 @@
+*{
+
+    margin: 0;
+    box-sizing: border-box;
+    
+    }
+    
+    #grid_wrapper {
+    
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 60px repeat(3, 1fr) 60px;
+    grid-template-areas: 
+    "he he"
+    "me me"
+    "la ra"
+    "la ra"
+    "la ra"
+    "fo fo"
+    ;
+    
+    }
+    
+   
+    
+    #menu {
+    
+        grid-area: me;
+        background: cornflowerblue;
+    }
+    
+    #rubrik {
+    
+        grid-area: he;
+        background: crimson;
+    }
+    
+    #left_pic {
+    
+    grid-area: la;
+    background-image: ;
+    }
+    
+    #main_section {
+    
+    grid-area: ra;
+    background: darkgreen;
+    }
+    
+
+    
+    #footer {
+    
+    grid-area: fo;
+    background: darkviolet;
+    }
+    
+   
