@@ -5,20 +5,20 @@
     
     }
     
-    #grid_wrapper {
+#grid_wrapper {
     
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 60px repeat(3, 1fr) 60px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 60px repeat(2, 1fr);
     grid-template-areas: 
-    "he he"
-    "me me"
-    "la ra"
-    "la ra"
-    "la ra"
-    "fo fo"
+    "he"
+    "me"
+    "pi"
+    "pi"
+    "pi"
+    "pi"
     ;
     
     }
@@ -28,33 +28,33 @@
     #menu {
     
         grid-area: me;
-        background: cornflowerblue;
+        background-color: black;
+        border: 2px solid rgb(218, 188, 20);
+        border-radius: 7px;
+        
     }
     
     #rubrik {
     
         grid-area: he;
-        background: crimson;
+        background: black;
     }
     
-    #left_pic {
+    #pic {
     
-    grid-area: la;
-    background-image: ;
+    grid-area: pi;
+    background-image: url(../img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    
+    ;
     }
     
-    #main_section {
     
-    grid-area: ra;
-    background: darkgreen;
-    }
     
 
-    
-    #footer {
-    
-    grid-area: fo;
-    background: darkviolet;
-    }
     
    
