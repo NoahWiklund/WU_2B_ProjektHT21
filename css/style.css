@@ -23,6 +23,23 @@
     
     }
     
+    #grid_wrapper_about {
+    
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 60px repeat(2, 1fr);
+        grid-template-areas: 
+        "he he"
+        "me me"
+        "pi tx"
+        "pi tx"
+        "pi tx"
+        "pi tx"
+        ;
+        
+        }
    
     
     #menu {
@@ -31,6 +48,11 @@
         background-color: black;
         border: 2px solid rgb(218, 188, 20);
         border-radius: 7px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row; 
+
         
     }
     
@@ -38,6 +60,12 @@
     
         grid-area: he;
         background: black;
+        border: 2px solid rgb(218, 188, 20);
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
     }
     
     #pic {
@@ -50,11 +78,66 @@
     align-items: center;
     flex-direction: column; 
     
+
     ;
     }
-    
-    
-    
 
+
+    #pic_about {
     
+        grid-area: pi;
+        background-image: url(../img/adrien-olichon-ZgREXhl8ER0-unsplash.jpg);
+        background-size: cover;
+    
+        ;
+        }
+    
+#text_start {
+
+background-color: rgba(0, 0, 0, 0.9);
+width: 800px;
+height: 300px;
+border: 2px solid gold;
+border-radius: 10px;
+display: flex;
+align-items: center;
+flex-direction: column; 
+padding: 5px;
+}
+
+p {
+
+color: silver;
+
+}
+
+h1 {
+    font-size: 43px;
+    color: gold;
+    font-family: 'Shalimar';
+    font-weight: normal;
+
+
+}
+
+h2 {
+color: gold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+h3 {
+color: silver;
+font-size: 34px;
+
+}
+    
+a {
+
+color: gold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 21px;
+text-decoration: none;
+}
    
