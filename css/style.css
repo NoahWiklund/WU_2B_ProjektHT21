@@ -77,10 +77,44 @@
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    
-
     ;
     }
+
+    #grid_wrapper_menu {
+    
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 60px repeat(2, 1fr);
+        grid-template-areas: 
+        "he he"
+        "me me"
+        "pi tx"
+        "pi tx"
+        "pi tx"
+        "pi tx"
+        ;
+        
+        }
+
+    #pic_menu {
+    
+        grid-area: pi;
+        background-image: url(../img/max-burger-PvyjOd6PSUo-unsplash.jpg);
+        background-size: auto;
+        max-width: 1000px;
+        ;
+        }
+    #flex_box_menu {
+            background-color: black;
+            grid-area: tx;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column; 
+            padding: 20px;
+        }
 
 
 #pic_about {
@@ -119,6 +153,8 @@ padding: 5px;
 p {
 
 color: silver;
+font-size: 16px;
+font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -151,4 +187,12 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 21px;
 text-decoration: none;
 }
-   
+
+#menu_about_link {
+
+color: silver;
+font-size: 16px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-decoration: underline;
+
+}
